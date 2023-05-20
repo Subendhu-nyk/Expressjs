@@ -12,7 +12,7 @@ chat.get("/",(req,res) => {
             console.log(err)
             data='No chat Exist'
         }
-        res.send(`${data}<form action="/" method="POST" onSubmit="document.getElementById('username').value= localStorage.getItem('username')">
+        res.send(`${data}<form action="/" method="POST" onsubmit="document.getElementById('username').value= localStorage.getItem('username')">
         <input type="text" name="message" id="message">
         <input type="hidden" name="username" id="username">
         <br />
