@@ -3,6 +3,7 @@ const server=express()
 const bodyParser=require('body-parser')
 server.use(bodyParser.urlencoded({extended:false}))
 server.use('/add-product',(req,res,next)=>{
+    console.log("get requested")
     res.send('<form action="/product" method="POST"><input type="text" name="title" /><input type="number" name="size" /><button type="submit">Save</button></form>')
   
 })
